@@ -4,8 +4,14 @@
  * Last modification: 2025-07-20
  */
 
+#include "Render.hpp"
+
 int main()
 {
-    return 1;
+    gui::Render render(1920, 1080);
+
+    render.display();
+
+    return 0;
 }
  

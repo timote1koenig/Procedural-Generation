@@ -6,10 +6,12 @@
 SRC = 	main.cpp							\
 		src/Tile/Tile.cpp					\
 		src/Type/Type.cpp					\
+		src/Render/Render.cpp				\
 
 INCLUDEFLAGS =	-I./includes/				\
 				-I./includes/Tile/			\
 				-I./includes/Type/			\
+				-I./includes/Render/		\
 
 OBJ = $(SRC:.cpp=.o)
 
