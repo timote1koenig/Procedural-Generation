@@ -7,8 +7,7 @@
 #ifndef GUI_TILE
     #define GUI_TILE
 
-    #include <utility>
-    #include "raylib.h"
+    #include "Type.hpp"
 
 namespace gui {
     class Tile
@@ -21,10 +20,7 @@ namespace gui {
 
         private:
             Model _model;
-            
-            float _x;
-            float _y;
-            float _z;     
+            MyVector3 _position;
     };
 }
 
