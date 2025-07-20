@@ -4,8 +4,12 @@
 ##
 
 SRC = 	main.cpp							\
+		src/Tile/Tile.cpp					\
+		src/Type/Type.cpp					\
 
-INCLUDEFLAGS =	-I./include/
+INCLUDEFLAGS =	-I./includes/				\
+				-I./includes/Tile/			\
+				-I./includes/Type/			\
 
 OBJ = $(SRC:.cpp=.o)
 
