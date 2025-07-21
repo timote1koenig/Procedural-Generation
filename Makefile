@@ -7,11 +7,13 @@ SRC = 	main.cpp							\
 		src/Tile/Tile.cpp					\
 		src/Type/Type.cpp					\
 		src/Render/Render.cpp				\
+		src/Map/Map.cpp						\
 
 INCLUDEFLAGS =	-I./includes/				\
 				-I./includes/Tile/			\
 				-I./includes/Type/			\
 				-I./includes/Render/		\
+				-I./includes/Map/			\
 
 OBJ = $(SRC:.cpp=.o)
 
