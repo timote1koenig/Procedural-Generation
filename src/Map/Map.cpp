@@ -33,7 +33,9 @@ void Map::displayMap()
 
 void Map::initMap()
 {
-    for (int i; i < this->_size; i++) {
-        this->_map.push_back(gui::Tile(0, 0, 0));
+    for (int y = 0; y < (this->_size / 2); y++) {
+        for (int x = 0; x < (this->_size / 2); x++) {
+            this->_map.push_back(gui::Tile(x, 0, y));
+        }
     }
 }

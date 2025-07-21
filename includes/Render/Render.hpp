@@ -4,14 +4,14 @@
  * Last modification: 2025-07-20
  */
 
-#include "Tile.hpp"
+#include "Map.hpp"
 #include <memory>
 #include <optional>
 
 namespace gui {
     class Render {
         public:
-            Render(int width, int height);
+            Render(int width, int height, int mapSize);
             ~Render();
 
             void display();
@@ -21,7 +21,7 @@ namespace gui {
             Camera3D _camera;
             int _screenWidth;
             int _screenHeight;
-            std::optional<Tile> _tile;
+            std::optional<Map> _map;
     };
 }      
 
