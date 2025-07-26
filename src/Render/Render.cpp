@@ -14,12 +14,12 @@ gui::Render::Render(int width, int height, int mapSize) : _camera(), _screenWidt
     SetTargetFPS(60);
 
     this->_camera.position = { (float)(mapSize / 2 * -1), (float)mapSize, (float)(mapSize / 2 * -1) };
-    this->_camera.target = { (float)(mapSize / 4), 0.0f, (float)(mapSize / 4) };
+    this->_camera.target = { (float)(mapSize / 2), 0.0f, (float)(mapSize / 2) };
     this->_camera.up = { 0.0f, 1.0f, 0.0f };
     this->_camera.fovy = 45.0f;
     this->_camera.projection = CAMERA_PERSPECTIVE;
 
-    this->_map = Map(0, 10);
+    this->_map = Map(0, mapSize);
 }
 
 gui::Render::~Render()

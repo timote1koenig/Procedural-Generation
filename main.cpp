@@ -8,7 +8,7 @@
 
 int main()
 {
-    gui::Render render(1920, 1080, 10);
+    gui::Render render(1920, 1080, 100);
 
     render.display();
 
